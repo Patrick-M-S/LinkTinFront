@@ -1,0 +1,73 @@
+.user-logged-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.user-logged-job-card {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #444;
+    font-family: 'Arial', sans-serif;
+    /* Escolha uma fonte mais adequada conforme preferência */
+    position: relative;
+    overflow: hidden;
+    /* Para a imagem de fundo não sobrepor bordas */
+}
+
+.user-logged-job-card h2 {
+    font-size: 28px;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.user-logged-job-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #666;
+    /* Um cinza mais suave para o texto */
+}
+
+.user-logged-job-card .highlight {
+    color: #0056b3;
+    /* Cor para destacar informações importantes como empresa ou localização */
+    font-weight: bold;
+}
+
+.user-logged-buttons {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuir os botões uniformemente */
+    margin-top: 20px;
+}
+
+.user-logged-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    /* Texto mais destacado */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Suavizar transição de cor e adicionar transformação */
+}
+
+.user-logged-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+.user-logged-button.no {
+    background-color: #dc3545;
+}

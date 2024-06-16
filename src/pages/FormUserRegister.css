@@ -1,0 +1,68 @@
+.form-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    /* Gradiente puxando para o azul */
+}
+
+.form-user-register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+.form-user-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-user-row label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-user-register input,
+.form-user-register select {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.form-user-register .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-user-register .btn:hover {
+    background-color: #0056b3;
+}
+
+input.error,
+select.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}

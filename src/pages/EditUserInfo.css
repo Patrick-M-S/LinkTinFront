@@ -1,0 +1,136 @@
+.edit-user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1E3C72, #2A5298);
+    /* Fundo azul metalizado */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    color: white;
+    /* Cor do texto */
+}
+
+.edit-user-info-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.edit-user-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.edit-user-info-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.edit-user-info-form input,
+.edit-user-info-form select,
+.edit-user-info-form textarea {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s;
+    background-color: #ffffff;
+    color: black;
+    /* Cor do texto */
+}
+
+.edit-user-info-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.edit-user-info-form input:focus,
+.edit-user-info-form select:focus,
+.edit-user-info-form textarea:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    border-color: #007bff;
+    background-color: #e7f3ff;
+}
+
+.skill.selected {
+    border-color: #4CAF50;
+    background-color: #E8F5E9;
+    color: #2E7D32;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.save-btn {
+    background-color: #28a745;
+    /* Cor do botão salvar */
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.cancel-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .edit-user-info-container {
+        padding: 10px;
+    }
+
+    .skill {
+        font-size: 0.8rem;
+        min-width: 60px;
+    }
+}

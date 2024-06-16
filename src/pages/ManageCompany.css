@@ -1,0 +1,34 @@
+.manage-company-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(135deg, #fe8a8a, #fcd1d1);
+}
+
+.manage-company-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.manage-company-nav button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d64545;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.manage-company-nav button:hover {
+    background-color: #b12a2a;
+}
+
+.active-section {
+    margin-top: 20px;
+    width: 100%;
+}

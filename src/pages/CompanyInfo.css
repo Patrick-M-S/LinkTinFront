@@ -1,0 +1,46 @@
+.company-info-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.company-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-row label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info-form input,
+.company-info-form select {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #d64545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-end;
+}
+
+.btn-submit:hover {
+    background-color: #b12a2a;
+}

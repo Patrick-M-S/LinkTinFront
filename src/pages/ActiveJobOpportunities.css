@@ -1,0 +1,44 @@
+.active-jobs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-card h3 {
+    margin: 0;
+}
+
+.job-card button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.job-card button:hover {
+    background-color: #ddd;
+}
+
+.job-card button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.job-card button:nth-child(2):hover {
+    background-color: #c82333;
+}

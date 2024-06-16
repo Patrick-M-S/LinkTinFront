@@ -1,0 +1,38 @@
+.company-profile-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    /* Posicionado no canto superior direito para diferenciar do card de usuário */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.manage-company-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.manage-company-btn:hover {
+    background-color: #0056b3;
+}

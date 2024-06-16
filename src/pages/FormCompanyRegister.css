@@ -1,0 +1,70 @@
+.form-company-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+    background: linear-gradient(135deg, #fe8a8a, #fcd1d1);
+    /* Gradiente puxando para o vermelho */
+}
+
+.form-company-register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+.form-company-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-company-row label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-company-register input,
+.form-company-register select {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.form-company-register .btn {
+    padding: 10px 20px;
+    background-color: #d64545;
+    /* Tom mais vermelho para o botão */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-company-register .btn:hover {
+    background-color: #b12a2a;
+    /* Tom mais escuro ao passar o mouse */
+}
+
+input.error,
+select.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
